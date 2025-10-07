@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="animate-fade-up">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Cinematic{' '}
-              <span className="text-transparent bg-gradient-accent bg-clip-text">
+              <span className="text-white bg-gradient-accent bg-clip-text">
                 Storytelling
               </span>{' '}
               Through Video
