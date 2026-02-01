@@ -32,7 +32,7 @@ const Portfolio = () => {
       duration: "3:45",
       views: "2.5M",
       description: "A breathtaking journey through untamed landscapes.",
-      videoSrc: "/vid/proj1.mp4",
+      videoSrc: "https://res.cloudinary.com/dc4dgwpyq/video/upload/v1769927077/proj1_g5i8r7.mp4",
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ const Portfolio = () => {
       duration: "1:30",
       views: "850K",
       description: "Dynamic product showcase with sleek animations.",
-      videoSrc: "/vid/proj2.mp4",
+      videoSrc: "https://res.cloudinary.com/dc4dgwpyq/video/upload/v1769927050/proj2_ucfnvg.mp4",
     },
     {
       id: 3,
