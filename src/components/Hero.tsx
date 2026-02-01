@@ -66,7 +66,7 @@ const Hero = () => {
               {/* VIDEO */}
               {isPlaying && (
                 <video
-                  src="/vid/proj1.mp4"
+                  src="https://res.cloudinary.com/dc4dgwpyq/video/upload/v1769927077/proj1_g5i8r7.mp4"
                   autoPlay
                   muted
                   playsInline
