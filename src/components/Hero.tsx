@@ -1,16 +1,14 @@
-import { Play, Download, Video } from "lucide-react";
+import { Play, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useRef, useState } from "react";
+import { useState } from "react";
+
 const Hero = () => {
-    const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
     setIsPlaying(true);
-    setTimeout(() => {
-      videoRef.current?.play();
-    }, 100);
   };
+
   return (
     <section
       id="home"
@@ -19,18 +17,20 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">
-            <h1 className="mt-12 text-3xl sm:text-4xl md:text-5xl lg:text-6xlfont-bold leading-tight break-words text-center">
+            <h1 className="mt-12 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight break-words text-center">
               Cinematic{" "}
               <span className="text-white bg-gradient bg-clip-text">
                 Storytelling
               </span>{" "}
               Through Video
             </h1>
+
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Professional video editor specializing in cinematic narratives,
               social media content, and compelling storytelling that captivates
               audiences.
             </p>
+
             <div className="flex flex-wrap gap-3 mb-8">
               {[
                 "Cinematic Editing",
@@ -58,18 +58,19 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          {/* Right Content - Video Placeholder */}
- <div className="animate-fade-in">
+
+          {/* Right Content - Video */}
+          <div className="animate-fade-in">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant aspect-video">
 
               {/* VIDEO */}
               {isPlaying && (
                 <video
-                  ref={videoRef}
                   src="/vid/proj1.mp4"
-                  controls
+                  autoPlay
                   muted
                   playsInline
+                  controls
                   className="w-full h-full object-cover"
                 />
               )}
