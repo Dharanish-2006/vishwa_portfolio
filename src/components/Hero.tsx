@@ -1,6 +1,5 @@
 import { Play, Download, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import vid1 from "../../public/vid/proj1.mp4";
 import { useRef, useState } from "react";
 const Hero = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
